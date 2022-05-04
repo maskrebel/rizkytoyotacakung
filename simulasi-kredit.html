@@ -76,7 +76,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="budget">Budget DP ANDA</strong> (wajib)</label>
-                                <input type="text" class="form-control regexDefault" id="budget" placeholder="Masukkan Budget DP Anda">
+                                <input type="text" class="form-control regexDefault" id="budget" placeholder="Satuan Juta">
                             </div>
                             <div class="form-group">
                                 <label for="tenor"><strong>Tenor </strong>(wajib)</label>
@@ -86,7 +86,7 @@
                             </div>
                         </div>
                         <div class="card-footer">
-                            <button type="submit" class="btn btn-primary" onclick="sendPromo()">Dapatkan Promo</button>
+                            <button type="submit" class="btn btn-primary aksi" onclick="sendPromo()">Dapatkan Promo</button>
                         </div>
                     </form>
                 </div>
@@ -124,6 +124,7 @@
         });
 
         function sendPromo() {
+            $(".aksi").prop('disabled', true).html('Proses');
                 if ($("#nama").val() ==""){
                     $("#nama").addClass('is-invalid')
                     $(".invalid-feedback").html('* nama tidak boleh kosong !!!')
@@ -157,15 +158,15 @@
                 }
             Email.send({
                 Host : "smtp.gmail.com",
-                Username : "okr.simpeldesa@gmail.com",
-                Password : "dtfmxicrueyrjqjq",
+                Username : "rizkytoyotacakung@gmail.com",
+                Password : "tywrvrcqcnrtwcpy",
                 To : 'rizki.hardiansyah13@gmail.com',
-                From : "No-reply <okr.simpeldesa@gmail.com>",
+                From : "No-reply <rizkytoyotacakung@gmail.com>",
                 Subject : "Simulasi kredit",
-            Body : "<html>\n" +
+                Body : "<html>\n" +
                         "    <h2>Permohonan Simulasi kredit</h2>\n" +
                         "    <p>Nama : "+$("#nama").val()+"</p>\n" +
-                        "    <p>NOHP : "+$("#nohp").val()+`<a href="https://api.whatsapp.com/send?phone=62`+$("#nohp").val().substring(1)+`&text=Halo Bapak/Ibu `+ $("#nama").val() +`, untuk pengajuan promo mobil `+$("#mobil").val()+` segera kami proses ya ">  konfirmasi</a></p>\n` +
+                        "    <p>NOHP : "+$("#nohp").val()+`<a href="https://api.whatsapp.com/send?phone=62`+$("#nohp").val().substring(1)+`&text=Halo Bapak/Ibu `+ $("#nama").val() +`, untuk pengajuan promo mobil `+$("#mobil").val()+` segera kami proses ya \n\n Terimakasih Bapak/Ibu `+$("#nama").val()+`">  konfirmasi</a></p>\n` +
                         "    <p>Mobil : "+$("#mobil").val()+"</p>\n" +
                         "    <p>Tipe : "+$("#type").val()+"</p>\n" +
                         "    <p>Transmisi : "+$("#transmisi").val()+"</p>\n" +
@@ -177,6 +178,7 @@
             }).then(
                 message => alert("Promo anda segera kami proses :)")
             );
+            $(".aksi").prop('disabled', false).html('Dapatkan Promo');
         }
     </script>
 </body>
