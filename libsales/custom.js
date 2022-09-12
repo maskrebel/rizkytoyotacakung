@@ -1,3 +1,19 @@
+$(".head_config").html(`<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+\t\t<title>Kredit Daya Toyota Cakung | Promo Daya Toyota Cakung | Harga Daya Toyota Cakung</title>
+\t\t<meta name="keywords" content="rizkytoyotacakung.com, rizkytoyotacakung, kredit Daya Toyota Cakung, toyota jakarta, Daya Toyota Cakung, dealer Daya Toyota Cakung, harga Daya Toyota Cakung, mobil Daya Toyota Cakung, sales Daya Toyota Cakung, info Daya Toyota Cakung, harga mobil Daya Toyota Cakung, promo Daya Toyota Cakung, harga promo Daya Toyota Cakung, dealer mobil Daya Toyota Cakung, promo mobil Daya Toyota Cakung, showroom Daya Toyota Cakung">
+\t\t<meta name="description" content="Dapatkan harga promo Daya Toyota Cakung termurah di dealer resmi Toyota Jakarta. Kredit Toyota dijamin ringan. Proses cepat dan mudah." >
+\t\t<link rel="image_src" href="https://www.kredittoyotajabotabek.com/file/20130806220256.png" />
+\t\t<link href="https://fonts.googleapis.com/css?family=Maven+Pro|Roboto" rel="stylesheet">
+\t\t<link rel="stylesheet" href="libsales/mix.css" media="screen">
+\t\t<link rel="stylesheet" href="https://www.kredittoyotajabotabek.com/libsales/style.css" media="all">
+\t\t<link rel="stylesheet" href="https://www.kredittoyotajabotabek.com/libsales/style(1).css" media="all">
+\t\t<script type="text/javascript" src="https://www.kredittoyotajabotabek.com/libsales/jquery-2.1.3.min.js"></script>
+\t\t<style type="text/css" >body{font-family:"Maven Pro";color:#414141;font-size:15px;}</style>
+\t\t<link href="https://www.kredittoyotajabotabek.com/libsales/logo-toyota.png" rel="icon">
+\t\t<link rel="stylesheet" href="https://www.kredittoyotajabotabek.com/libsales/responsive.css" media="all">
+\t\t<meta name="viewport" content="width=device-width, user-scalable=no">
+\t\t<link rel="stylesheet" href="https://www.kredittoyotajabotabek.com/libsales/custom.css" media="all">`)
+
 $(".headertop").html(`<div class="header-30">
                     <a href="#">DAYA TOYOTA CAKUNG</a>
                 </div>
